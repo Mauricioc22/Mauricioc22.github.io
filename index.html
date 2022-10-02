@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8aec55dfd8.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./scripts/arriba.js"></script>
+    <script src="./scripts/script.js"></script>
+
+</head>
+
+<body>
+    <!-- -------------whatsapp------------
+    <a href="https://api.whatsapp.com/send?phone=5214411297247" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a> -->
+    <!-- ---------ir arriba--------- -->
+    <span class="ir-arriba icon-arrow-up2">
+        <i class="fas fa-arrow-up"></i>
+    </span>
+    <!-- --------------header--------------- -->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Diseñador UI/UX</p>
+                <h1>Hola, soy <span>Mauricio</span><br>Castillo</h1>
+            </div>
+        </div>
+    </header>
+    <!-- -----about----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre mi</h1>
+                    <p>
+                        Hola, soy Mauricio. Diseñador web, estudiante de Ingeniería de Software en la Universidad Autónoma de Querétaro desde el 2020. Mi gusto por la tecnología me ha llevado por un interesante camino, el camino del desarrollo web, para dar soluciones tecnológicas y presencia en internet a negocios y/o personas que quieran llevar su marca al siguiente nivel. En este sitio, descubrirás algunos de mis proyectos y tecnologías que utilizo para lograrlo.
+                    </p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="habilidades">
+                        <ul>
+                            <li><span>UI/UX</span><br>Diseño Web/App interfaces</li>
+                            <li><span>Desarrollo Web</span><br>Desarrollo Web con HTML, CSS y JavaScript</li>
+                            <li><span>Ecommerce</span><br>Desarrollo de tiendas online con WordPress y WooCommerce</li>
+
+                            <li><span>Django</span><br>Construcción de tiendas online con Django</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experiencia">
+                        <ul>
+                            <li><span>2021 - Actualidad</span><br> Construcción de la pagina web Cerámica Servín<br></li>
+                            <li><span>2021 - 2022</span><br> Creacion de una tienda con Django<br></li>
+                            <li><span>2021 - 2022</span><br> Desarrollo de un portafolio personal 100% responsivo con HTML, CSS y JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="educacion">
+                        <ul>
+                            <li><span>2020 - Actualidad</span><br>Estudios en Ingeniería de Software en la Universidad Autónoma de Querétaro</li>
+                            <li><span>2022</span><br>Marketing Digital - Platzi</li>
+                                <!-- <li><span>Desarrollo de Apps</span><br>Construccion Android/IOS apps</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Mis servicios</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Diseño Web</h2>
+                    <p>
+                        Creación de sitios web para empresas o personas dándoles una presencia en internet con su propio dominio, con diseños elegantes y sobrios 100% responsivos para optimizar la experiencia en cualquier dispositivo tanto móvil como computadoras.
+                    </p>
+                    <!-- <a href="#">Saber más</a> -->
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <h2>Social Ads</h2>
+                    <p>
+                        Creación de campañas de marketing digital a través de Social Ads, muestra tu marca en internet, segmentando tu publico objetivo para que tus anuncios y publicaciones se muestren a las personas correctas destacando entre tu competencia.
+                    </p>
+                    <!-- <a href="#">Saber más</a> -->
+                </div>
+
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Diseño de Apps</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                    <a href="#">Saber más</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- --------------Portafolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mi trabajo</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="trabajo 1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>La app conecta personas talentosas al rededor del mundo.
+                            Descargala ahora.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="trabajo 2">
+                    <div class="layer">
+                        <h3>Tiendas en linea</h3>
+                        <p>.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="trabajo 3">
+                    <div class="layer">
+                        <h3>Apps</h3>
+                        <p>La app conecta personas talentosas al rededor del mundo.
+                            Descargala ahora.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+    </div>
+
+    <!-- -------------Contacto---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contáctame</h1>
+                    <p><a href="mailto:maury_cp@hotmail.com"><i class="fa-regular fa-envelope"></i> maury_cp@hotmail.com</a></p>
+                    <p><a href="tel:4411297247"><i class="fa-solid fa-phone"></i> 441 129 7247</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mauricio.castillopalma" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/Maury9c" target="_blank">
+                            <i class="fa-brands fa-twitter-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/maury9cp/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mauricio-castillo-bb4237152/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5214411297247" class="btn-wsp2" target="_blank">
+                            <i class="fa fa-whatsapp icono"></i>
+                        </a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Descargar CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Tu nombre" required>
+                        <input type="email" name="email" placeholder="Tu correo" required>
+                        <textarea name="Message" rows="6" placeholder="Tu mensaje"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            distance: '25px',
+            duration: 2500,
+            reset: true
+        })
+        sr.reveal('.header-text, #about, #services, #portfolio, #contact', { delay: 190, origin: 'bottom' })
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+<footer>
+    <p>Copyright © 2022. Powered by Mauricio Castillo </p>
+</footer>
+
+</html>
