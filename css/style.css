@@ -388,7 +388,7 @@ a #fa-solid{
 }
 /* --------button-------- */
 .ir-arriba{   
-    display: none;
+    display: block;
     padding: 20px;
     background: #ff0051;
     border: none;
