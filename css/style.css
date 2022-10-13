@@ -419,6 +419,11 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 873px) {
+	
+    header {
+        background-attachment: local;
+    }
+	
     nav .fa-solid {
         display: block;
         font-size: 25px;
