@@ -13,7 +13,7 @@ body {
     color: #fff;
 }
 
-header {
+div.hdr {
     width: 100%;
     height: 100vh;
     background-image: url(../images/background.png);
@@ -21,18 +21,26 @@ header {
     background-position: center;
     background-attachment: fixed;
 }
+nav {
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    background: #080808;
+    top: 0;
+    transition: top 1s;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 
 .container {
     padding: 10px 10%;
 
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
 .logo {
     width: 107px;
@@ -419,11 +427,14 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 873px) {
-	
-    header {
+    .logo {
+        width: 70px;
+    }
+
+    div.hdr {
         background-attachment: local;
     }
-	
+
     nav .fa-solid {
         display: block;
         font-size: 25px;
@@ -455,7 +466,7 @@ nav .fa-solid {
 
 
 @media only screen and (max-width: 600px) {
-    header {
+    div.hdr {
         background-image: url(../images/phone-background.png);
     }
 
