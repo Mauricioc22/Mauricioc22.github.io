@@ -10,7 +10,7 @@
     <title>Mauricio Castillo | Desarrollador Web y Desarrollador de Software</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/8aec55dfd8.js" crossorigin="anonymous"></script>
-
+    <script src="./scripts/main.js"></script>
     <script src="./scripts/arriba.js"></script>
     <script src="./scripts/script.js"></script>
     
@@ -28,27 +28,35 @@
         <i class="fas fa-arrow-up"></i>
     </div>
     <!-- --------------header--------------- -->
-    <header class="hdr" id="header" >
+    <header>
+        <nav id="navbar">
+            <img src="./images/logo.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+
+                <li><a href="#contact">Contacto</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <!-- background -->
+    <div class="hdr" id="header">
         <div class="container">
-            <nav>
-                <img src="./images/logo.png" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Inicio</a></li>
-                    <li><a href="#about">Sobre mi</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    
-                    <li><a href="#contact">Contacto</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+
+
+
             <div class="header-text">
                 <p>Desarrollador web</p>
                 <h1>Hola, soy <span>Mauricio</span><br>Castillo</h1>
             </div>
         </div>
-    </header>
+    </div>
+    
     <!-- -----about----- -->
     <div id="about">
         <div class="container">
