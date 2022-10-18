@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto DJango</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://kit.fontawesome.com/8aec55dfd8.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../scripts/arriba.js"></script>
+    <script src="../scripts/script.js"></script>
+
+</head>
+
+<body>
+    
+    <!-- --------------header--------------- -->
+    <header class="ct">
+        <div class="container">
+            <nav>
+                <img src="../images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="https://www.maucastillo.com/">Inicio</a></li>
+                    <li><a href="https://www.maucastillo.com/#about">Sobre mi</a></li>
+                    <li><a href="https://www.maucastillo.com/#services">Servicios</a></li>
+                    <li><a href="https://www.maucastillo.com/#portfolio">Portafolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="https://www.maucastillo.com/#contact">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+     
+        </div>
+    </header>
+    <embed src="../files/DjangoProject.pdf" type="application/pdf" width="100%" height="600px" />
+
+
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+<footer>
+    <p>Copyright © 2022. Powered by Mauricio Castillo </p>
+</footer>
+
+</html>
