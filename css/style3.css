@@ -97,7 +97,7 @@ footer {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
     h1{
         text-decoration: none;
     }
@@ -113,7 +113,7 @@ footer {
         width: 80%;
         margin: 100px auto 50px;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
         gap: 30px;
     
     }
