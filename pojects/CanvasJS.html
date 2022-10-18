@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <meta name="theme-color" content=" #6c145c" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas - JS</title>
+    <link rel="stylesheet" href="../css/style3.css">
+    <script src="https://kit.fontawesome.com/8aec55dfd8.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/scriptjq.js"></script>
+
+</head>
+<body>
+
+    <div class="ir-arriba icon-arrow-up2">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- --------------header--------------- -->
+    <header>
+        <nav id="navbar">
+            <a href="./index.html">
+            <img src="../images/logo.png" alt="logo" class="logo">
+            </a>
+            <ul id="sidemenu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html#about">Sobre mi</a></li>
+                <li><a href="./index.html#services">Servicios</a></li>
+                <li><a href="./index.html#portfolio">Portafolio</a></li>
+
+                <li><a href="./index.html#contact">Contacto</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <div class="ful-img" id="fulImgBox">
+        <img src="../images/canvas/010.png" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <div class="uno">
+        <h1><span>Galería Canvas Sketch</span></h1>
+    </div>
+    <div class="intro">
+        <p>A continuación, se muestra una galería con las imágenes que he generado mediante la herramienta Canvas, todo fue programado en lenguaje JavaScript.</p>
+
+    </div>
+    
+    
+    
+    <div class="img-gallery">
+        <p>Canvas (&lt;canvas&gt;) es un elemento HTML que nos permite dibujar distintas formas y darles color, cambiar de tamaño e incluso generar animaciones.</p>
+        <img src="../images/canvas/010.png" onclick="openFulImg(this.src)" alt="">
+        <p>Entre estas formas tenemos cuadrados y círculos. En las siguientes imágenes hay una mezcla de ambas figuras, generadas aleatoriamente partiendo del centro del lienzo, con propiedades variantes como ancho del contorno o tamaño, generando imágenes únicas. </p>
+        <img src="../images/canvas/020.png" onclick="openFulImg(this.src)" alt="">
+        <img src="../images/canvas/021.png" onclick="openFulImg(this.src)" alt="">
+        <img src="../images/canvas/022.png" onclick="openFulImg(this.src)" alt="">
+        <img src="../images/canvas/023.png" onclick="openFulImg(this.src)" alt="">
+        <img src="../images/canvas/024.png" onclick="openFulImg(this.src)" alt="">
+        <p>Partículas dispersas en el lienzo conectadas entre sí por líneas, con aquellas que estén a una distancia menor a 200px, si una partícula se aleja a más de esta distancia la línea desaparece, en el caso contrario, si se acerca a 200px o menos se generara una nueva línea entre las partículas.</p>
+        <img src="../images/canvas/030.png" onclick="openFulImg(this.src)" alt="">
+        <video src="../video/canvas/2022.10.10-14.21.18.mp4" width= 100% controls></video>
+        <p>A las figuras anteriores podemos agregarles algo de ruido, en nuestro caso no es más que una secuencia de números que no tienen relación entre sí, generando una representación visual y dinámica que, a pesar de ser aleatorio, encuentra cierto orden y podría parecer incluso orgánica debido al flujo de datos.</p>
+        <img src="../images/canvas/040.png" onclick="openFulImg(this.src)" alt="">
+        <img src="../images/canvas/041.png" onclick="openFulImg(this.src)" alt="">
+        <img src="../images/canvas/042.png" onclick="openFulImg(this.src)" alt="">
+        <video src="../video/canvas/2022.10.11-12.28.25.mp4" width= 100% controls></video>
+        <p>Utilizando glifos, podemos generar más glifos o imágenes más grandes, por ejemplo, rellenar la silueta de alguna letra o de alguna imagen más compleja. A continuación, se ve como ordenando estos glifos en cierto orden se puede generar números o una figura con cierto volumen.</p>
+        <img src="../images/canvas/404.png" onclick="openFulImg(this.src)" alt="">
+        <img src="../images/canvas/404-1.png" onclick="openFulImg(this.src)" alt="">
+        <img src="../images/canvas/Skull.png" onclick="openFulImg(this.src)" alt="">
+        <script src="../scripts/main.js"></script>
+
+    </div>
+    <br>
+    <!-- <div class="text">
+    <h2>Canvas</h2>
+    <p>Canvasla codificac</p>
+    </div> -->
+
+    <script src="../scripts/scriptgallery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.ir-arriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 100);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+
+        });
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <footer>
+        <p>Copyright © 2022. Powered by Mauricio Castillo </p>
+    </footer>
+
+    
+</body>
+</html>
